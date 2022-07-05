@@ -10,4 +10,8 @@ let proxy = "https://proxy-t1-server1.herokuapp.com"
         console.log(data)
     })
 
+    fetch(proxy+"/buzz").then(res=>(res.json())).then((data)=>{
+        console.log(data)
+    })
+
    }, 1800000)
